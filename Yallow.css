@@ -1,0 +1,49 @@
+.background1{
+    background-image: url("pics/Layer _header.jpeg");
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1300px ;
+    max-height: 566px;
+}
+
+.advantage {
+    width: 100%;
+    max-width: 1300px ;
+    max-height: 212px;
+}
+
+.lorem-container-yellow {
+    width: 100%;
+    max-width: 1300px ;
+    max-height: 509px;
+}
+
+.lorem-container-gray {
+    width: 100%;
+    max-width: 1300px ;
+    max-height: 499px;
+    color: ;
+}
+
+footer {
+    width: 100%;
+    max-width: 1300px ;
+    max-height: 64px;
+}
+
+@font-face {
+    font-family: 'Lucida Sans';
+
+}
+
+@font-face {
+    font-family: 'SergoeWp';
+    src: url("fonts/SergoeWp.ttf");
+    font-size: 63px;
+}
+
+body {
+    width: 1300px;
+    height: auto;
+    margin: 0 auto;
+}
