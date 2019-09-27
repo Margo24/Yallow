@@ -25,10 +25,27 @@ ul li::before {
 }
 .advantage{
     display: flex;
+    background-color: #F7F7F7;
+}
+.design, .custom, .its-free {
+    flex: 1f;
+    padding: 10px ;
+    border: 1px solid #D4D4D4;
+    text-transform: uppercase;
 }
 
+.text-lorem-yellow {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #FFFFFF;
+}
 nav {
     display: flex;
+}
+
+h4 {
+    font-size: 27px;
+    text-align: center;
 }
 
 .ABOUT-US, .CONTACTS, .SERVICES {
@@ -38,7 +55,7 @@ nav {
 }
 
 .slidecontainer {
-    width: 100%; /* Width of the outside container */
+    width: 75%; /* Width of the outside container */
 }
 
 /* The slider itself */
@@ -70,19 +87,22 @@ nav {
     width: 100%;
     max-width: 1300px ;
     max-height: 509px;
+    background-color: #F5CC24;
 }
 
 .lorem-container-gray {
+    display: flex;
     width: 100%;
     max-width: 1300px ;
     max-height: 499px;
-    color: ;
+    background-color: #4C4C4C;
 }
 
 footer {
     width: 100%;
     max-width: 1300px ;
     max-height: 64px;
+    background-color: #4C4C4C;
 }
 
 @font-face {
