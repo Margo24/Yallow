@@ -8,6 +8,7 @@ body {
 header {
     display: block;
     width: 100%;
+    max-width: 1300px;
     height: auto;
     position: absolute;
     top: 20px;
@@ -24,7 +25,7 @@ header {
 
 .logo {
     display: flex;
-    width: 45%;
+    width: 50%;
     height:auto ;
 }
 .logo1 {
@@ -44,11 +45,19 @@ header {
     align-self: center;
 }
 
+.navigation-div {
+    width: 50%;
+    display: flex;
+    justify-items: start;
+    align-self: flex-end;
+}
+
 nav {
     display: flex;
-    width: 550px;
+    width: 454px;
     align-self: flex-end;
     padding: 0px;
+    margin-left: 0px;
     box-shadow: -5px -5px 2px #9B7D08, -10px -10px 4px #7A681A;
 }
 a {
@@ -66,15 +75,15 @@ a {
     border: 1px solid #DCB105;
 }
 .ABOUT-US {
-    width:190px;
+    width:180px;
 }
 
 .SERVICES {
-    width:170px;
+    width:160px;
 }
 
 .CONTACTS {
-    width:160px;
+    width:150px;
 }
 .about-us-text, .services-text, .contacts-text {
     padding-left: 10px;
@@ -87,9 +96,10 @@ a {
 
 .intro {
     display: flex;
-    background-image: url("pics/bg0.jpg");
+    background-image: url("pics/Layer _header.jpeg");
     width: 100%;
     padding-top: 160px;
+    padding-bottom: 36px;
 }
 
 .the-cool, .the-minimal {
