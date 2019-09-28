@@ -2,76 +2,100 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Yallow</title>
+    <title>TheYalow</title>
+    <link rel="stylesheet" href="Yallow.css">
 </head>
 <body>
     <header>
+        <div class = "container">
         <div class = "logo">
-            <h1>THEYALOW</h1>
-            <img src="pics/star.jpeg" alt="logo">
+            <img src="pics/logo1.png" alt="logo1" class="logo1">
+            <img src="pics/logo.png" alt="logo">
+            <h1 class="logo-text" >THEYALOW</h1>
         </div>
         <nav>
             <div class="ABOUT-US">
-                <img src="pics/about_pic.jpeg"/>
-                <a href="">ABOUT US</a>
+                <img src="pics/header-menu__item.png"/>
+                <a href=""><span class="about-us-text">ABOUT US</span></a>
             </div>
             <div class="SERVICES">
-                <img src="pics/services_pic.jpeg">
-                <a href="">SERVICES</a>
+                <img src="pics/services__item.png">
+                <a href=""><span class="services-text">SERVICES</span></a>
             </div>
             <div class="CONTACTS">
-				<img src="pics/contact_pic.jpeg">
-                <a href="">CONTACTS</a>
+				<img src="pics/contact__item.png">
+                <a href=""><span class="contacts-text">CONTACTS</span></a>
             </div>
         </nav>
+        </div>
     </header>
-    <main>
+   <main>
 	<section class = "intro">
-		<div>
-			<img class="left-arrow" src="pics/left_arrow.jpeg">
+		<div class="left-arrow">
+			<img  src="pics/left_arrow.png">
 		</div>
-        <section>
-            <div class = "video-stub">
-				<div class="play-button">
-					<img src="pics/play_button.jpeg">
-				</div>
-				<div class="slider">
-					<img src="pics/slider.jpeg">
-				</div>
+        <section class="central-block" >
+            <div class = "placeholder1">
+                <div class="play-centralizing">
+				    <div class="play-button">
+					    <img src="pics/play_icon.png">
+				    </div>
+                </div>
+                <div class = "video-controls">
+                    <div class="mini-playbutton-location">
+                        <div class="mini-playbutton-quatro">
+                            <div class="mini-playbutton">
+                                <img src="pics/play_icon.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="paint-played">
+				        <div class="slider">
+					        <img src="pics/rounded-rectangle.png">
+				        </div>
+                    </div>
+                    <div class="volume">
+                        <img src="pics/volume.png">
+                    </div>
+                </div>
             </div>
-            <div class = "banner">
-                <h1>The cool</h1>  
-				<h1>The minimal</h1>
-             </div>
+                <div class = "banner">
+                    <span class = "the-cool">The cool</span>
+				    <span class = "the-minimal">The minimal</span>
+                </div>
         </section>
-		<div>
-			<img class="left-arrow" src="pics/left_arrow.jpeg">
+		<div class="right-arrow">
+			<img src="pics/right_arrow.png">
 		</div>
 		</section>
-        <section class="advantage">
-            <div class = "design">
-                <img src="pics/cloud.jpeg"/>
-                <h4>design</h4>
-            </div>
-            <div class = "custom">
-                <img src="pics/leaf.jpeg"/>
-                <h4>customize</h4>
-            </div>
-            <div class = "its-free">
-                <img src="pics/plane.jpeg"/>
-                <h4>its free</h4>
-            </div>
-        </section>
-        <section class="lorem-container-yellow">
-            <div class="text">
-                <h2>Lorem ipsum dolor sit amet</h2>
-            </div>
-            <div class = "box-left">
-                <div class="inner-text">
-                    <h3>Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut</h3> <!--ровнение по правому краю, где будет плюсик-->
+       </section>
+       <section class="advantage">
+           <div class="cover">
+                <div class = "design">
+                    <img src="pics/cloud.svg"/>
+                    <span class="advantage-text">better design</span>
                 </div>
+                <div class = "custom">
+                    <img src="pics/leaf.svg"/>
+                    <span class="advantage-text">customize</span>
+                </div>
+                <div class = "free">
+                    <img src="pics/plane.svg"/>
+                    <span class = "advantage-text">its free</span>
+                </div>
+           </div>
+       </section>
+   </main>
+    <!--  <section class="social-media-section">
+          <div class="text">
+              <span class="text-lorem-yellow">Lorem ipsum dolor sit amet</span>
+          </div>
+          <div class = "box-left">
+              <div class="inner-text">
+                  <h3>Lorem ipsum dolor sit amet,
+                      consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut</h3> <!--ровнение по правому краю, где будет плюсик-->
+              <!--  </div>
                 <div class="plus">
                     <h3>+</h3>
                 </div>
@@ -79,7 +103,7 @@
             <div class="twitter">
                 <img src = "pics/twitter.jpeg"/>
                 <!-- add text? and make it visible? -->
-            </div>
+           <!-- </div>
             <div class="slidecontainer">
                 <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
             </div>
@@ -88,11 +112,11 @@
             </aside>
         </section>
         <section class="lorem-container-gray"> <!--прикрутить к секции тень -->
-            <div class="text">
+          <!--  <div class="text">
                 <h3>Lorem ipsum dolor sit amet</h3>
             </div>
             <div class="devices">
-                <img src="pics/comp_pic.jpeg">
+                <img src="pics/comp_pic.png">
                 <img src="pics/ipad_pic.jpeg">
                 <img src="pics/phone_pic.jpeg">
             </div>
@@ -108,9 +132,8 @@
     </main>
     <footer>
         <img src="star.jpeg"/>
-        <h4>YALLOW</h4>
-
+        <h4>THEYALOW</h4>
     </footer>
-
+-->
 </body>
 </html>

@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'Lucida Sans';
+
+}
+
+@font-face {
+    font-family: 'SergoeWp';
+    src: url("fonts/SergoeWp.ttf");
+    font-size: 63px;
+}
+
+body {
+    width: 1300px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.intro {
+    background-image: url("pics/bg0.jpg");
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1300px ;
+    max-height: 566px;
+}
+
+.logo1{
+    position: absolute;
+    opacity: 0.5;
+}
+
+.logo-text {
+    font-size: 41px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Lucida Sans";
+    font-style: italic;
+    text-align: center;
+    box-shadow: 1px 1.732px 0px rgba(0,0,0,0.42);
+}
+
+.logo {
+    display: flex;
+    width: 45%;
+}
+
+header {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+}
+
+.advantage{
+    display: flex;
+    background-color: #F7F7F7;
+}
+
+.design, .custom, .its-free {
+    flex: 1f;
+    padding: 10px ;
+    border: 1px solid #D4D4D4;
+    text-transform: uppercase;
+}
+
+.ABOUT-US, .CONTACTS, .SERVICES {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55%;
+    background-color: #F5C506;
+    padding: 5px;
+    border: 1px solid #DCB105;
+}
+a {
+    text-decoration: none;
+}
+.about-us-text, .services-text, .contacts-text {
+    padding-left: 10px;
+    font-size: 17px;
+    letter-spacing: 0px;
+    color: #9b7d08;
+    font-family: "Segoe WP";
+    text-align: center;
+
+}
+
+.the-cool, .the-minimal {
+    font-size: 63px;
+    letter-spacing: 1px;
+    color: #F5C506;
+    font-family: "Asap";
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.the-minimal {
+    color: #FFFFFF;
+}
+
+.advantage-text {
+    font-size: 27px;
+    letter-spacing: 0px;
+    color: #000000;
+    font-family: "Segoe UI";
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.text-lorem-yellow {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #FFFFFF;
+}
+nav {
+    display: flex;
+    box-shadow: -5px -5px 2px #9B7D08, -10px -10px 4px #7A681A;
+   /* box-shadow: 10px 5px 5px;
+
+    */
+}
+
+
+/*
+font-size: 17px;
+letter-spacing: 0px;
+color: #9b7d08;
+font-family: "Segoe WP";
+text-align: center;
+ */
+ul {
+    list-style: none; /* Remove default bullets */
+}
+
+li {
+    font-size: 22px;
+}
+ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #F5C506; /* Change the color */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.slidecontainer {
+    width: 50%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    border-radius: 5px;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+.advantage {
+    width: 100%;
+    max-width: 1300px ;
+    max-height: 212px;
+}
+
+.lorem-container-yellow {
+    width: 100%;
+    max-width: 1300px ;
+    max-height: 509px;
+    background-color: #F5CC24;
+}
+
+.lorem-container-gray {
+    display: flex;
+    width: 100%;
+    max-width: 1300px ;
+    max-height: 499px;
+    background-color: #4C4C4C;
+}
+
+footer {
+    width: 100%;
+    max-width: 1300px ;
+    max-height: 64px;
+    background-color: #4C4C4C;
+}
+
+
+

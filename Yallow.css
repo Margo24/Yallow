@@ -1,138 +1,251 @@
-.background1{
-    background-image: url("pics/Layer _header.jpeg");
+body {
     width: 100%;
+    height: auto;
     margin: 0 auto;
-    max-width: 1300px ;
-    max-height: 566px;
-}
-ul {
-    list-style: none; /* Remove default bullets */
+    max-width: 1300px;
 }
 
-li {
-    font-size: 22px;
+header {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 20px;
 }
-ul li::before {
-    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: #F5C506; /* Change the color */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -1em; /* Also needed for space (tweak if needed) */
+
+.container {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
 }
 
 .logo {
     display: flex;
+    width: 45%;
+    height:auto ;
 }
-.advantage{
-    display: flex;
-    background-color: #F7F7F7;
-}
-.design, .custom, .its-free {
-    flex: 1f;
-    padding: 10px ;
-    border: 1px solid #D4D4D4;
-    text-transform: uppercase;
+.logo1 {
+    position: absolute;
+    opacity: 0.5;
 }
 
-.text-lorem-yellow {
-    font-size: 20px;
-    font-family: sans-serif;
-    color: #FFFFFF;
+.logo-text {
+    font-size: 41px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Lucida Sans";
+    font-style: italic;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    align-self: center;
 }
+
 nav {
     display: flex;
+    width: 550px;
+    align-self: flex-end;
+    padding: 0px;
+    box-shadow: -5px -5px 2px #9B7D08, -10px -10px 4px #7A681A;
+}
+a {
+    text-decoration: none;
 }
 
-h4 {
-    font-size: 27px;
+.ABOUT-US, .SERVICES, .CONTACTS {
+    display: flex;
+   /* width:180px; */
+    justify-content: center;
+    align-items: center;
+    height: 55%;
+    background-color: #F5C506;
+    padding: 10px;
+    border: 1px solid #DCB105;
+}
+.ABOUT-US {
+    width:190px;
+}
+
+.SERVICES {
+    width:170px;
+}
+
+.CONTACTS {
+    width:160px;
+}
+.about-us-text, .services-text, .contacts-text {
+    padding-left: 10px;
+    font-size: 17px;
+    letter-spacing: 0px;
+    color: #9b7d08;
+    font-family: "Segoe WP";
     text-align: center;
 }
 
-.ABOUT-US, .CONTACTS, .SERVICES {
-    background-color: #F5C506;
-    padding: 10px ;
-    border: 1px solid #DCB105 ;
+.intro {
+    display: flex;
+    background-image: url("pics/bg0.jpg");
+    width: 100%;
+    padding-top: 160px;
 }
 
-.slidecontainer {
-    width: 75%; /* Width of the outside container */
+.the-cool, .the-minimal {
+    font-size: 63px;
+    letter-spacing: 1px;
+    color: #F5C506;
+    font-family: "Asap";
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
 }
 
-/* The slider itself */
+.the-minimal {
+    color: #FFFFFF;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.left-arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 10%;
+    height: auto;
+}
+
+.right-arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 10%;
+    height: auto;
+}
+
+.central-block {
+    display: flex;
+    width: 80%;
+    height: auto;
+}
+
+.placeholder1 {
+    width: 50%;
+    height: 327px;
+    background-image: url("pics/parrots.png");
+    background-size: 100% 100%;
+    margin-bottom: 37px;
+}
+.play-centralizing {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 67px;
+    height: 67px;
+    border-radius: 33px;
+    background-color: #f5c506;
+    opacity: 0.7;
+}
+
+.video-controls {
+    display: flex;
+    width: 100%;
+    height: 15%;
+}
+
+.mini-playbutton-location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+}
+
+.mini-playbutton-quatro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    background-color: #f5c506;
+    opacity: 0.7;
+}
+
+.mini-playbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    height: 17px;
+}
+
+.paint-played {
+    width: 80%;
+    display: flex;
+}
+
 .slider {
-    -webkit-appearance: none;  /* Override default CSS styles */
-    appearance: none;
-    width: 100%; /* Full-width */
-    height: 25px; /* Specified height */
-    background: #d3d3d3; /* Grey background */
-    outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-    transition: opacity .2s;
-    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
 }
 
-/* Mouse-over effects */
-.slider:hover {
-    opacity: 1; /* Fully shown on mouse-over */
+.volume {
+    width: 10%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .advantage {
     width: 100%;
     max-width: 1300px ;
     max-height: 212px;
-}
-
-.lorem-container-yellow {
-    width: 100%;
-    max-width: 1300px ;
-    max-height: 509px;
-    background-color: #F5CC24;
-}
-
-.lorem-container-gray {
     display: flex;
-    width: 100%;
-    max-width: 1300px ;
-    max-height: 499px;
-    background-color: #4C4C4C;
+    justify-content: center;
 }
 
-footer {
-    width: 100%;
-    max-width: 1300px ;
-    max-height: 64px;
-    background-color: #4C4C4C;
+.cover {
+    width: 80%;
+    display: flex;
+    justify-content: center;
 }
 
-@font-face {
-    font-family: 'Lucida Sans';
-
+.design, .custom, .free {
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    padding: 10px ;
+    border: 1px solid #D4D4D4;
 }
 
-@font-face {
-    font-family: 'SergoeWp';
-    src: url("fonts/SergoeWp.ttf");
-    font-size: 63px;
+.advantage-text {
+    font-size: 27px;
+    letter-spacing: 0px;
+    color: #000000;
+    font-family: "Segoe UI";
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
 }
-
-body {
-    width: 1300px;
-    height: auto;
-    margin: 0 auto;
-}
-
-/*
-.chess {
-  background-image:
-		linear-gradient(90deg, #333 30px, white 30px),
-		linear-gradient(90deg, white 30px, #333 30px),
-		linear-gradient(90deg, #333 30px, white 30px);
-	background-position: 0 0, 0 30px, 0 60px;
-	background-repeat: repeat-x;
-	background-size: 60px 30px, 60px 30px, 60px 30px;
-	height: 90px;
-	margin: 15px auto;
-	width: 750px;
-}
- */
