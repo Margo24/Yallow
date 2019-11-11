@@ -33,12 +33,10 @@
     src: url("assets/open-sans/opensans.ttf");
 }
 
-body {
+.wrapper {
     width: 100%;
-    height: 100%;
     margin: 0 auto;
     max-width: 1300px;
-    max-height: 1850px;
 }
 
 header {
@@ -50,7 +48,7 @@ header {
     top: 20px;
 }
 
-.container {
+.header-wrapper {
     display: flex;
     width: 80%;
     justify-content: space-between;
@@ -59,18 +57,18 @@ header {
     margin: 0 auto;
 }
 
-.logo {
+.header-logo {
     width: 50%;
     height: auto;
     display: flex;
 }
 
-.logo1 {
-    position: absolute;
+.logo-first-part {
+    margin-right: -80px;
     opacity: 0.5;
 }
 
-.logo-text {
+h1 {
     padding: 0;
     margin: 0;
     align-self: center;
@@ -80,17 +78,11 @@ header {
     font-family: "Lucida Sans", Arial, sans-serif;
     font-style: italic;
     text-align: center;
-}
-
-.navigation-div {
-    width: 50%;
-    display: flex;
-    justify-items: start;
-    align-self: flex-end;
+    text-transform: uppercase;
 }
 
 nav {
-    width: 454px;
+    width: 50%;
     display: flex;
     align-self: flex-end;
     padding: 0;
@@ -99,46 +91,42 @@ nav {
 }
 
 a {
+    padding-left: 10px;
+    font-size: 17px;
+    letter-spacing: 0;
+    color: #9b7d08;
+    font-family: "Segoe WP", Arial, sans-serif;
     text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-.ABOUT-US, .SERVICES, .CONTACTS {
-    height: 55%;
+.nav-section {
     padding: 10px;
     display: flex;
-   /* width:180px; */
     justify-content: center;
     align-items: center;
     background-color: #F5C506;
     border: 1px solid #DCB105;
 }
 
-.ABOUT-US {
+.first-nav-section {
     width:180px;
 }
 
-.SERVICES {
+.second-nav-section {
     width:160px;
 }
 
-.CONTACTS {
+.third-nav-section {
     width:150px;
 }
 
-.about-us-text, .services-text, .contacts-text {
-    padding-left: 10px;
-    font-size: 17px;
-    letter-spacing: 0;
-    color: #9b7d08;
-    font-family: "Segoe WP", Arial, sans-serif;;
-    text-align: center;
-}
-
-.ABOUT-US:hover, .SERVICES:hover, .CONTACTS:hover {
+.nav-section:hover {
     background-color: lightyellow;
 }
 
-.intro {
+.title-page {
     width: 100%;
     padding-top: 160px;
     padding-bottom: 35px;
@@ -724,7 +712,7 @@ ul li::before {
             width: auto;
             height: auto;
             padding-top: 22px;
-            font-size: 22.05px;
+            font-size: 22px;
         }
 
         .nav {
@@ -764,7 +752,7 @@ ul li::before {
             background-color: black;
         }
 
-        central-block {
+        .central-block {
             display: block;
             width: 100%;
             margin: 0;
