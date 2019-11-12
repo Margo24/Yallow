@@ -11,21 +11,21 @@
     <header>
         <div class = "header-wrapper">
             <div class = "header-logo">
-                <img src="pics/logo1.svg" class="logo-first-part" alt="First part of logo"/>
-                <img src="pics/logo.svg" alt="Second part of logo"/>
+                <img src="pics/logo_first_part.svg" class="logo-first-part" alt="First part of logo"/>
+                <img src="pics/logo_second_part.svg" alt="Second part of logo"/>
                 <h1>TheYalow</h1>
             </div>
             <nav>
                 <div class="nav-section first-nav-section">
-                    <img src="pics/header-menu__item.svg" alt="header item"/>
+                    <img src="pics/info__item.svg" alt="Information item"/>
                     <a href="#">About us</a>
                 </div>
-                <div class="nav-section second-nav-section">
-                    <img src="pics/services__item.svg" alt="service item"/>
+                <div class="nav-section">
+                    <img src="pics/services__item.svg" alt="Service item"/>
                     <a href="#">Services</a>
                 </div>
-                <div class="nav-section third-nav-section">
-                    <img src="pics/contact__item.svg" alt="contact item"/>
+                <div class="nav-section">
+                    <img src="pics/contact__item.svg" alt="Contact item"/>
                     <a href="#">Contacts</a>
                 </div>
             </nav>
@@ -33,59 +33,49 @@
     </header>
     <main>
         <section class = "title-page">
-            <div class="left-arrow">
-                <div class = "yellow-rectangle">
-                    <img  src="pics/left_arrow.png"  alt="arrow"/>
+            <div class="control-area left">
+                <div class = "slider-fill">
+                    <img  src="pics/slider-left_arrow.png"  alt="Left arrow"/>
                 </div>
             </div>
-            <section class="central-block" >
-                <div class = "placeholder1">
-                    <div class="play-centralizing">
-                        <div class="play-button">
-                            <img src="pics/play_icon.png" alt="play-icon"/>
-                        </div>
+            <div class = "placeholder1">
+                <div class="play-button">
+                    <img src="pics/video-play_icon.png" alt="Play video icon"/>
+                </div>
+                <div class = "video-controls">
+                    <div class="switch-button">
+                        <img src="pics/video-play_icon.png" alt="Play video icon"/>
                     </div>
-                    <div class = "video-controls">
-                        <div class="mini-playbutton-location">
-                            <div class="mini-playbutton-quatro">
-                                <div class="mini-playbutton">
-                                    <img src="pics/play_icon.png" alt="play icon"/>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="paint-played">
-                            <div class="counted-time"></div>
-                            <div class="timer"></div>
-                        </div>
-                        <div class="volume">
-                            <img src="pics/volume.png" alt="volume"/>
-                        </div>
+                    <div class="played-time"></div>
+                    <div class="timer"></div>
+                    <div class="volume">
+                        <img src="pics/video-volume.png" alt="Video volume"/>
                     </div>
                 </div>
-                <div class = "banner">
-                    <span class = "the-cool">The cool</span>
-                    <span class = "the-minimal">The minimal</span>
-                </div>
-            </section>
-            <div class="right-arrow">
-                <div class = "yellow-rectangle">
-                    <img src="pics/right_arrow.png" alt="arrow"/>
+            </div>
+            <div class = "banner">
+                <span class = "the-cool">The cool</span>
+                <span class = "the-minimal">The minimal</span>
+            </div>
+            <div class="control-area right">
+                <div class = "slider-fill">
+                    <img src="pics/slider-right_arrow.png" alt="Right arrow"/>
                 </div>
             </div>
         </section>
         <section class="advantage">
-            <div class="cover">
+            <div class="cover"><!-- снести нафиг, заменить на марджины и паддинги в advantage --> 
                 <div class = "design">
                     <img src="pics/cloud.svg" alt="cloud"/>
-                    <span class="advantage-text">better design</span>
+                    <span>Better design</span><!-- class="advantage-text" -->
                 </div>
                 <div class = "custom">
                     <img src="pics/leaf.svg" alt="leaf"/>
-                    <span class="advantage-text">customize</span>
+                    <span>Customize</span>
                 </div>
                 <div class = "free">
                     <img src="pics/plane.svg" alt="plane"/>
-                    <span class = "advantage-text">its free</span>
+                    <span>Its free</span>
                 </div>
             </div>
         </section>
@@ -109,7 +99,7 @@
                         <div class="monkey-placeholder">
                             <div class="play-centralizing-monkey">
                                 <div class="play-button">
-                                    <img src="pics/play_icon.png" alt="play"/>
+                                    <img src="pics/video-play_icon.png" alt="Play video icon"/>
                                 </div>
                             </div>
                         </div>
@@ -117,7 +107,7 @@
                     <div class="main-part-separator2">
                         <div class="twitter-container">
                             <div class="twitter">
-                                <img src = "pics/twitter.svg" alt="twitter logo"/>
+                                <img src = "pics/twitter.svg" alt="Twitter logo"/>
                             </div>
                             <div class = "twitter-elements">
                                 <div class="twitter-num">
@@ -135,7 +125,7 @@
                     <span class="date-month">april</span>
                 </aside>
                 <div class="slidecontainer-cover">
-                    <div class="slidecontainer">
+                    <div class="slidecontainer"><!-- снести нафиг, заменить на марджины и паддинги -->
                         <input type="range" min="1" max="100" value="50" class="media-slider">
                     </div>
                 </div>
@@ -147,7 +137,7 @@
             </div>
             <div class="hi-tech-separator">
                 <div class="hi-tech-circle">
-                    <p class="hi-tech-circle-text">ITS 100% FREE</p>
+                    <p class="hi-tech-circle-text">Its 100% free</p><!-- uppercase -->
                 </div>
                 <div class="devices">
                     <img src="pics/comp_pic.png" class="comp-class" alt="desktop"/>
@@ -156,10 +146,10 @@
                 </div>
                 <div class="list">
                     <ul>
-                        <li><span class="li-text">Sed ut perspiciatis unde omnis</span></li>
-                        <li><span class="li-text">Lorem ipsum dolor sit amet, consectetur adipisicing</span></li>
-                        <li><span class="li-text">Sed ut perspiciatis unde omnis copy</span></li>
-                        <li><span class="li-text">Lorem ipsum dolor sit amet, consectetur adipisicing copy</span></li>
+                        <li>Sed ut perspiciatis unde omnis</li><!-- class="li-text" -->
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+                        <li>Sed ut perspiciatis unde omnis copy</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing copy</li>
                     </ul>
                 </div>
             </div>
@@ -170,7 +160,7 @@
             <div class = "logo">
                 <img src="pics/logo1.svg" alt="logo1" class="logo1"/>
                 <img src="pics/logo.svg" alt="logo"/>
-                <h1 class="logo-footer" >THEYALOW</h1>
+                <h1 class="logo-footer">THEYALOW</h1>
             </div>
         </div>
     </footer>
