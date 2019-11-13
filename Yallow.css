@@ -295,24 +295,16 @@ a {
 
 .SMS-container {
     width: 80%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center;*/
 }
 
 .text {
     padding-top: 20px;
     padding-bottom: 10px;
-    margin: 0px;
-}
-
-.header-text-media {
-    width: 918px;
-    height: 130px;
+    margin: 0;
     font-size: 37px;
-    letter-spacing: 0px;
     color: #ffffff;
     font-family: "PT Sans", Arial, sans-serif;
     font-weight: 400;
@@ -326,14 +318,8 @@ a {
     justify-content: space-between;
 }
 
-.main-part-separator1 {
+.main-part-separator {
     width: 66%;
-    height: 233px;
-    display: flex;
-}
-
-.main-part-separator2 {
-    width: 30%;
     height: 233px;
     display: flex;
 }
@@ -342,90 +328,74 @@ a {
     width: 50%;
     height: 233px;
     display: flex;
+    flex-direction: column;
     background-color: #EC9E03;
 }
 
-.inner-text {
-    padding: 20px 0px 20px 20px;
-    margin: 0 auto;
-}
-
-.latin-text-media {
-    width: 279px;
-    height: 307px;
+.latin-text-box p {
+    margin: 15px 25px 5px 25px;
     font-size: 29px;
-    letter-spacing: 0px;
     line-height: 38px;
     color: #ffffff;
     font-family: "Segoe WP", Arial, sans-serif;
     font-weight: 300;
 }
 
-.plus-box {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 1px;
-    margin: 8px;
+.latin-text-box img {
+    margin: 0 10px 10px auto;
 }
 
-.plus-box img:hover {
+.latin-text-box img:hover {
     background-color: black;
 }
 
 .monkey-placeholder {
     width: 50%;
-    justify-self: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url("pics/monkey.jpeg");
     background-size: 100% 100%;
 }
 
-.play-centralizing-monkey {
-    width: 100%;
-    height: 100%;
+.monkey-play-button {
+    width: 67px;
+    height: 67px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 33px;
+    background-color: #f5c506;
+    opacity: 0.5;
+}
+
+.monkey-play-button:hover {
+    background-color: coral;
 }
 
 .twitter-container {
-    width: 90%;
-    height: 100%;
-    display: flex;
-    background-color: #EC9E03;
-    justify-self: flex-end;
-    justify-content: center;
-    align-items: center;
-}
-
-.twitter {
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-}
-
-.twitter-elements {
-    width: 10%;
-    height: 100%;
+    width: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-}
-
-.twitter-num {
-    margin: 5px 10px 5px 5px;
-    display: flex;
-    justify-content: flex-start;
+    background-color: #EC9E03;
 }
 
 .twi-num {
+    margin: 15px 20px auto auto;
     font-size: 29px;
-    letter-spacing: 0px;
     line-height: 38px;
     color: #ffffff;
     font-family: "Segoe WP", Arial, sans-serif;
+}
+
+.twitter-plus {
+    margin: 15px 10px 10px auto;
+}
+
+.twitter-plus:hover {
+    background-color: black;
 }
 
 .date {
@@ -448,14 +418,14 @@ a {
 
 .date-month {
     font-size: 21px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     line-height: 38px;
     color: #b26529;
     font-family: "Segoe UI", Arial, sans-serif;
     text-transform: uppercase;
 }
 
-.slidecontainer-cover {
+.slider-container {
     width: 100%;
     height: 10%;
     margin-top: 20px;
@@ -464,18 +434,9 @@ a {
     align-content: flex-end;
 }
 
-.slidecontainer {
-    width: 80%;
-    height: 100%;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-
-}
-
 .media-slider {
     -webkit-appearance: none;
-    width: 100%; /* Full-width */
+    width: 80%; /* Width */
     height: 16px; /* Specified height */
     display: flex;
     align-self: center;
