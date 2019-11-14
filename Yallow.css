@@ -37,6 +37,7 @@
     width: 100%;
     margin: 0 auto;
     max-width: 1300px;
+    min-width: 640px;
 }
 
 header {
@@ -56,7 +57,6 @@ header {
 
 .header-logo {
     width: 50%;
-    height: auto;
     display: flex;
 }
 
@@ -73,7 +73,6 @@ h1 {
     margin: 0;
     align-self: center;
     font-size: 41px;
-    letter-spacing: 0;
     color: #ffffff;
     font-family: "Lucida Sans", Arial, sans-serif;
     font-style: italic;
@@ -337,7 +336,7 @@ a {
 
 .latin-text-box p {
     margin: 15px 25px 5px 25px;
-    font-size: 29px;
+    font-size: 26px;
     line-height: 38px;
     color: #ffffff;
     font-family: "Segoe WP", Arial, sans-serif;
@@ -578,165 +577,131 @@ ul li::before {
     text-transform: uppercase;
 }
 
-    @media only screen and (max-width: 768px) {
-
-        .cover {
-            width: 100%;
-        }
-
-        header {
-            position: static;
-            display: block;
-            width: 100%;
-            height: auto;
-            top: 0;
-        }
-
-        .container {
-            display: flex;
-            width: 30%;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            background-color: rgb(71, 71, 71);
-            border: 1px solid rgb(71, 71, 71);
-        }
-
-        .logo {
-            width: 65px;
-            height: 70px;
-            padding-left: 20px;
-            padding-right: 10px;
-        }
-
-        .logo-text {
-            display: block;
-            width: auto;
-            height: auto;
-            padding-top: 22px;
-            font-size: 22px;
-        }
-
-        .nav {
-            width: 70%;
-            height: 112px;
-            margin-top: 0px;
-            padding: 0px;
-            box-shadow: none;
-        }
-
-        .about-us, .services, .contact {
-            width: 62%;
-            height: auto;
-        }
-
-        .play-button:active .play-icon {
-            background-color: coral;
-        }
-
-        .ABOUT-US:active .about-us-text {
-            background-color: lightyellow;
-        }
-
-        .SERVICES:active .services-text {
-            background-color: lightyellow;
-        }
-
-        .CONTACTS:active .contacts-text {
-            background-color: lightyellow;
-        }
-
-        .yellow-rectangle:active {
-            background-color: forestgreen;
-        }
-
-        .plus-box img:active {
-            background-color: black;
-        }
-
-        .central-block {
-            display: block;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-        }
-
-        .placeholder1 {
-            display: block;
-            width: 100%;
-            height: 328px;
-            padding: 0px;
-            margin: 0;
-        }
-
-        .left-arrow {
-            display: none;
-        }
-
-        .right-arrow {
-            display: none;
-        }
-
-        .banner {
-            display: none;
-        }
-
-        .placeholder1 {
-            width: 100%;
-        }
-
-        .play-centralizing {
-            justify-content: center;
-        }
-
-        .advantage {
-            border: none;
-            box-shadow: 0px -2px 0px rgba(255, 255, 255, 0.5), 0px -4px 0px rgba(255, 255, 255, 0.1);;
-        }
-
-        .design, .custom, .free {
-            border: none;
-        }
-
-        .text {
-            display: none;
-        }
-
-        .main-part {
-            flex-direction: column;
-        }
-
-        .main-part-separator1 {
-            width: 100%;
-            background-color: #FFFFFF;
-        }
-
-        .latin-text-box, .monkey-placeholder {
-            width: 50%;
-            margin: 5px;
-        }
-
-        .inner-text {
-            font-size: 33px;
-        }
-
-        /* TWITTER */
-        .date {
-            display: none;
-        }
-
-        .slidecontainer-cover {
-            display: none;
-        }
-
-        .hi-tech-text-cover {
-            width: 100%;
-        }
-
-        .devices {
-            width: 100%;
-        }
-
-        .list {
-            display: none;
-        }
+@media (max-width: 960px) {
+    header {
+        margin: 0;
+        background-color: #5B5B5B;
     }
+
+    .header-wrapper {
+        width: 100%;
+    }
+
+    .header-logo {
+        width: auto;
+        margin-left: 10px
+    }
+
+    .logo-first-part, .logo-second-part {
+        width: 39px;
+        height: 39px;
+    }
+
+    .logo-second-part {
+        margin-left: -39px;
+    }
+
+    h1 {
+        font-family: "LucidaSans-Italic", Arial, sans-serif;
+        font-size: 17px;
+    }
+
+    nav {
+        box-shadow: none;
+    }
+
+    .nav-section {
+        padding: 20px 15px;
+    }
+
+    .nav-section:active {
+        background-color: lightyellow;
+    }
+
+    .first-nav-section {
+        padding-left: 35px;
+    }
+
+    .title-page {
+        padding: 0;
+        background-image: none;
+    }
+
+    .banner, .control-area {
+        display: none;
+    }
+
+    .placeholder1 {
+        width: 100%;
+    }
+
+    .play-button:active {
+        background-color: coral;
+    }
+
+    .advantage {
+        box-shadow: 0 -5px 0 rgba(249, 249, 249, 0.6), 0 -10px 0 rgba(249, 249, 249, 0.3);
+    }
+
+    .advantage-cover {
+        width: 100%;
+    }
+
+    .design, .custom, .free {
+        border: none;
+    }
+
+    .social-media-section {
+        height: auto;
+        background-image: none;
+    }
+
+    .SMS-container {
+        width: 100%;
+    }
+
+    .main-part {
+        flex-direction: column;
+    }
+
+    .latin-text-box, .monkey-placeholder {
+        margin: 0 2px 5px 2px;
+    }
+
+    .latin-text-box {
+        height: auto;
+    }
+
+    .main-part-separator, .twitter-container {
+        width: 100%;
+    }
+
+    .twitter-container {
+        padding: 40px 0;
+    }
+
+    .twitter-plus, .twi-num {
+        display: none;
+    }
+
+    .text, .date, .slider-container {
+        display: none;
+    }
+
+    .plus-box img:active {
+        background-color: black;
+    }
+
+    .hi-tech-text-cover {
+        font-size: 41px;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .footer {
+        box-shadow: 0 -5px 10px black;
+    }
+
+}
