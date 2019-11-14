@@ -61,8 +61,11 @@ header {
 }
 
 .logo-first-part {
-    margin-right: -80px;
     opacity: 0.5;
+}
+
+.logo-second-part {
+    margin-left: -80px;
 }
 
 h1 {
@@ -431,7 +434,6 @@ a {
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    align-content: flex-end;
 }
 
 .media-slider {
@@ -455,28 +457,25 @@ a {
     background-color: #EC9E03;
 }
 
-.hi-tech-container {
-    position: relative;
-    width: 100%;
+.hi-tech {
     height: 499px;
+    background-image: url("pics/bg_gray.png");
+}
+
+.hi-tech-container {
+    width: 85%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("pics/bg_gray.png");
-    background-size: 100% 100%;
 }
 
 .hi-tech-text-cover {
-    padding: 20px;
+    padding-top: 45px;
+    padding-bottom: 60px;
     margin: 0 auto;
-}
-
-.hi-tech-text {
-    width: 918px;
-    height: 130px;
     font-size: 43px;
-    letter-spacing: 0px;
     color: #f5c506;
     font-family: "PT Sans", Arial, sans-serif;
     font-weight: 400;
@@ -484,54 +483,42 @@ a {
 }
 
 .hi-tech-separator {
-    width: 80%;
-    height: 320px;
     display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-.devices {
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-end;
-}
-
-.ipad-class, .phone-class {
-    margin-bottom: 25px;
 }
 
 .hi-tech-circle {
-    position: absolute;
-    display: flex;
-    left: 120px;
-    top: 120px;
-    justify-content: center;
-    align-items:center ;
-    background-color: #F5C506;
     height: 140px;
     width: 140px;
+    margin-top: -50px;
+    margin-left: -30px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color: #FFFFFF;
+    font-size: 17px;
+    font-family: "PTSans-NarrowBold", Arial, sans-serif;
+    text-transform: uppercase;
+    background-color: #F5C506;
     border-radius: 200px;
 }
 
-.hi-tech-circle-text {
-    color: #FFFFFF;
-    font-size: 19px;
-    font-family: "LucidaSans-Italic", Arial, sans-serif;;
+.label-wrapper {
+    min-width: 323px;
+    height: 255px;
+    margin: 0 10px;
+    background-image: url("pics/comp_pic.png");
+    background-size: 100% 100%;
 }
 
-.list {
-    width: 40%;
-    display: flex;
-    align-items: flex-end;
+.ipad-class, .phone-class {
+    margin: 0 10px 40px 10px;
 }
 
-.li-text {
-    width: 352px;
-    height: 45px;
-    font-size: 22px;
-    letter-spacing: 0px;
+ul {
+    margin: 0 0 0 45px;
+    font-size: 20px;
     color: #a9a9a7;
     font-family: "Open Sans", Arial, sans-serif;
     font-weight: 400;
@@ -541,15 +528,14 @@ li {
     list-style: none;
     display: flex;
     margin-top: 15px;
-    margin-bottom: 15px;
 }
 ul li::before {
     content: "";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
     border: 2px solid #F5C506;
     background-color: #f5c506;
-    height: 15px;
-    width: 15px;
-    border-radius: 15px;
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
     margin-top: 5px;
     margin-right: 10px;
     margin-left: -1em; /* Also needed for space (tweak if needed) */
@@ -570,17 +556,27 @@ ul li::before {
     align-items: center;
 }
 
-.logo-footer{
+.footer-container img {
+    width: 50px;
+    height: 50px;
+}
+
+.footer-logo-first-part {
+    opacity: 0.5;
+}
+
+.footer-logo-second-part {
+    margin-left: -50px;
+}
+
+.footer-container span {
     font-size: 29px;
-    letter-spacing: 0px;
     color: #ffffff;
     font-family: "Lucida Sans", Arial, sans-serif;
     font-style: italic;
     text-align: center;
-    display: flex;
-    align-self: center;
+    text-transform: uppercase;
 }
-
 
     @media only screen and (max-width: 768px) {
 
