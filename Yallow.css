@@ -33,6 +33,11 @@
     src: url("assets/open-sans/opensans.ttf");
 }
 
+html,
+body {
+    margin: 0;
+}
+
 .wrapper {
     width: 100%;
     margin: 0 auto;
